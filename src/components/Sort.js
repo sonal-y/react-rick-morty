@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 class Sort extends Component {
     
     handleChange = (e) => {
-        alert(e.target.value);
         this.props.sortCharacters(e.target.value);
     }
+    
      render() {
         return (
             <div>

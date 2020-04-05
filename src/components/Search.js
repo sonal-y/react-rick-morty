@@ -18,11 +18,12 @@ class Search extends Component {
      render() {
         return (
             <div>
+              <h3>Search by Name</h3>
               <form onSubmit={this.onSubmit} className="form">
                   <input
                      type="text"
                      name="text"
-                     placeholder="Search User.."
+                     placeholder="Search Character.."
                      value={this.state.text} 
                      onChange={this.onChange} />
                    <input

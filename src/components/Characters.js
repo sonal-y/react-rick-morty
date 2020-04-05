@@ -7,9 +7,9 @@ const Characters = ({ characters, loading }) => {
           return <Spinner />
       } else {
         return (
-            <div>
-                {characters.map(character => (
-                    <CharacterItem key={character.id} character={character} />
+            <div className="characters">
+                {characters.map((character,index) => (
+                    <CharacterItem key={index} character={character} />
                 ))}                
             </div>
             );

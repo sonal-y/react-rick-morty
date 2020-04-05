@@ -4,7 +4,7 @@ const CharacterItem = ({ character })  => {
     
         return (
             <div className="card-component__section">
-                <img src={character.image} alt={character.name} />
+                <img src={character.image} alt={character.name} width='240px' />
                 <div className="card-component__content">
                     <div className="card-component__header">
                         <span className="card-header">{character.name}</span><br/>

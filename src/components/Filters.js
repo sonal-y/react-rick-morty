@@ -52,7 +52,7 @@ class Filters extends Component {
         
       render() {
         return (
-            <div id="sidebar" className="col-4">
+            <div id="sidebar">
                  <h2>Filters</h2>
                     <div className="form form-inline">
                         {this.filterItems.map((item,index) => ( 
@@ -61,8 +61,8 @@ class Filters extends Component {
                                     {(index === 0 || index === 3 || index === 5) ? item.name : ''}
                                 </div>
                                 
-                                <label key={item.id}>
-                                    <input type='checkbox' name={item.name} onChange={this.handleCheck} />
+                                <label htmlFor="">
+                                    <input type='checkbox' value={item.value} name={item.name} onChange={this.props.filterCharacters} />
                                     {item.value}
                                 </label>
                           </div>
