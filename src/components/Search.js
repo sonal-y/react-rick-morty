@@ -23,11 +23,10 @@ class Search extends Component {
                   <input
                      type="text"
                      name="text"
-                     placeholder="Search Character.."
                      value={this.state.text} 
                      onChange={this.onChange} />
                    <input
-                     type="submit" />
+                     type="submit" value="Search" />
               </form>
             </div>
             );

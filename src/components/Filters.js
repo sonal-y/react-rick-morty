@@ -57,9 +57,9 @@ class Filters extends Component {
                     <div className="form form-inline">
                         {this.filterItems.map((item,index) => ( 
                             <div key={index}>
-                                <div>
+                                <h3>
                                     {(index === 0 || index === 3 || index === 5) ? item.name : ''}
-                                </div>
+                                </h3>
                                 
                                 <label htmlFor="">
                                     <input type='checkbox' value={item.value} name={item.name} onChange={this.props.filterCharacters} />

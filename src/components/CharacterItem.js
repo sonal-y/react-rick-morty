@@ -4,11 +4,11 @@ const CharacterItem = ({ character })  => {
     
         return (
             <div className="card-component__section">
-                <img src={character.image} alt={character.name} width='240px' />
+                <img src={character.image} alt={character.name} width='236px' />
                 <div className="card-component__content">
                     <div className="card-component__header">
-                        <span className="card-header">{character.name}</span><br/>
-                        <span>id:<span>{character.id}</span>- {character.created}</span>
+                        <div className="card-header">{character.name}</div>
+                        <div className="card-id">id:<span>{character.id}</span>- {character.created}</div>
                     </div>
                     <div className="card-component__details">
                         <div className="bottom-border">

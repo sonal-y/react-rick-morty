@@ -8,10 +8,10 @@ class Sort extends Component {
     
      render() {
         return (
-            <div>
-                <label htmlFor="characterId">Sort by ID:</label>
-                 <select id="characterId" onChange={this.handleChange}>
-                    <option value=""></option>
+            <div className="sort-section">
+                
+                 <select onChange={this.handleChange}>
+                    <option value="">Sort by ID:</option>
                     <option value="asc">Ascending</option>
                     <option value="desc">Descending</option>
                 </select>              
